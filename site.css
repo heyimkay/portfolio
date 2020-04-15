@@ -175,7 +175,7 @@ a#en {
     color: #5ed1d3;
 }
 
-li.item.resume.lang {
+li.item.resume {
     float: left;
     margin-top: 11px;
     margin-right: 20px;
@@ -190,7 +190,7 @@ outline: none!important;
 
 
 @media only screen and (max-width: 600px)  {
-    li.item.resume.lang {
+    a.lang {
         display: none;
     }
     video[poster] {
