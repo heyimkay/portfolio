@@ -5,12 +5,11 @@ theButton.onclick = function () {
     if (password==="pugs!2020"){
         window.open("files/Portfolio2020.pdf","_blank");
     } else{
-        while(password !="pugs!2020"){
-            password = prompt("oops! wrong password");
-        }
-        window.open("files/Portfolio2020.pdf","_blank");
+      password = prompt("oops! wrong password");
     }
 }
+
+
 
 
 $(function() {
