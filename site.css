@@ -4,11 +4,9 @@
     margin: 0;
 }
 body {
-    width: 90%;
     margin: 0 auto;
     position: relative;
     font-family: "Raleway", sans-serif;
-    max-width: 1020px;
 }
 
 h1 {
@@ -18,13 +16,25 @@ h1 {
     margin-bottom: 0;
 }
 p {
-    line-height: 24px;
     margin: 20px 0 50px 0;
 }
 .title {
     max-width: 480px;
     margin-top: 10%;
     z-index: 1;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section.top {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
 }
 
 canvas {
@@ -51,6 +61,9 @@ button {
 
 .container {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1020px;
 }
 
 a {
@@ -188,6 +201,58 @@ a:focus {
 outline: none!important;
 }
 
+.footer {
+    min-height: 100vh;
+    background-color: #2C2C2C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.contact {
+    width: 90%;
+    max-width: 1320px;
+}
+
+.email {
+    width: 60%;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.footerlight {
+    width: 50%;
+    display: inline;
+}
+
+a.sns.two {
+    padding-left: 30px;
+}
+.sns {
+    opacity: .5;
+}
+.sns::hover {
+    opacity: 1;
+}
+.contact p {
+    font-size: 45px;
+}
+
+span.emailaddress {
+    color: #2CBCDB;
+    position: relative;
+}
+
+span.emailaddress::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #2CBCDB;
+    width: 100%;
+    left: 0;
+    bottom: 5px;
+}
 
 @media only screen and (max-width: 600px)  {
     a.lang {
@@ -195,5 +260,14 @@ outline: none!important;
     }
     video[poster] {
         opacity: 0.7;
+    }
+    .contact p {
+    font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+     .contact p {
+    font-size: 20px;
     }
 }
