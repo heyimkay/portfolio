@@ -255,6 +255,12 @@ span.emailaddress::after {
     bottom: 5px;
 }
 
+.footerlight img {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
 @media only screen and (max-width: 600px)  {
     a.lang {
         display: none;
@@ -264,6 +270,9 @@ span.emailaddress::after {
     }
     .contact p {
     font-size: 25px;
+    }
+    .footerlight img {
+        margin-left: 0px;
     }
 }
 
