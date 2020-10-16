@@ -10,9 +10,9 @@ body {
 }
 
 h1 {
-    font-family: "Domine", serif;
+    font-family: "Poppins", serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: bold;
     margin-bottom: 0;
 }
 p {
