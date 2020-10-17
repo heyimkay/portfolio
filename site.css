@@ -12,7 +12,7 @@ body {
 h1 {
     font-family: "Poppins", serif;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0;
 }
 p {
@@ -254,13 +254,44 @@ span.emailaddress::after {
     left: 0;
     bottom: 5px;
 }
-
-.footerlight img {
-    width: 300px;
-    margin-left: 50px;
-    margin-top: 50px;
+.section.about {
+    width: 100%;
+    height: 620px;
+    background-color: #21BEE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
+.intro-about-container {
+    width: calc(100% - 40px);
+    min-height: unset;
+    flex-direction: column;
+    position: relative;
+    max-width: 1320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-about {
+    padding-top: 40px;
+    line-height: 60px;
+    font-size: 40px;
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.about-absolute {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
 @media only screen and (max-width: 600px)  {
     a.lang {
         display: none;
@@ -271,13 +302,51 @@ span.emailaddress::after {
     .contact p {
     font-size: 25px;
     }
-    .footerlight img {
-        margin-left: 0px;
-    }
 }
 
 @media only screen and (max-width: 330px) {
      .contact p {
     font-size: 20px;
+    }
+    .intro-about {
+        font-size: 35px;
+        line-height: 53px;
+    }
+}
+
+@media only screen and (min-width: 767px)  {
+    .intro-about {
+        max-width: 404px;
+        font-size: 45px;
+        padding-top: 0px;
+    }
+    .section.about{
+        height: 768px;
+    }
+    .about-absolute {
+        position: absolute;
+        font-size: 30px;
+    }
+    .about-absolute.right {
+        right: -30px;
+        transform: rotate(90deg);
+    }
+    .about-absolute.top{
+        top: -130px;
+    }
+    .about-absolute.left {
+        left: 30px;
+        transform: rotate(-90deg);
+    }
+    .about-absolute.bottom {
+        bottom: -130px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .intro-about {
+        max-width: 784px;
+        font-size: 65px;
+        line-height: 98px;
     }
 }
