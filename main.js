@@ -24,9 +24,10 @@ theButton.onclick = function () {
 ///    });
 ///  });
 
- $(window).load(function () {
-     $("#top").slideDown();
- });
+ ///$(window).load(function () {
+///     $("#top").slideDown();
+/// });
+
 var slideUp = {
     distance: '150%',
     origin: 'bottom',
