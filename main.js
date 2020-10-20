@@ -36,7 +36,7 @@ var slideUp = {
 
 ScrollReveal().reveal('.intro-about', slideUp);
 ScrollReveal().reveal('.forfun',slideUp);
-///ScrollReveal().reveal('.contact',slideUp);
+ScrollReveal().reveal('.contact',slideUp);
 
  //   $(window).load(function () {
 //        $("#top").show("slide", {
