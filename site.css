@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
 }
-
+#top {
+    display: none;
+}
 body {
     margin: 0 auto;
     position: relative;
@@ -314,7 +316,7 @@ span.emailaddress::after {
     padding-bottom: 5px;
 }
 
-.section.forfun {
+.section.forfuns {
     background: #F5DC2D;
     text-align: center;
     display: flex;
@@ -451,7 +453,7 @@ p.fun-title {
     p.fun-copy {
         margin-bottom: 30px;
     }
-    .section.forfun {
+    .section.forfuns {
         padding: 60px;
     }
 }
@@ -508,7 +510,7 @@ p.fun-title {
     .grid.right {
         margin: auto 50px;
     }
-    .section.forfun {
+    .section.forfuns {
         align-items: center;
         justify-content: center;
         padding: 100px;
