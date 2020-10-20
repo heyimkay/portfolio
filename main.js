@@ -42,5 +42,5 @@ ScrollReveal().reveal('.contact',slideUp);
 //    });
 
  $(window).load(function () {
-     $("#top").slideDown(300).delay(3000);
+     $("#top").slideDown(300);
  });
