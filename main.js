@@ -17,14 +17,16 @@ theButton.onclick = function () {
 ///  });
 ///});
 
-  $(function() {
-    $("#language-toggle").click(function(){  
-        $(".text-on").addClass("text-on").removeClass("text-off");
-        $(".text-off").addClass("text-off").removeClass("text-on");
-    });
-  });
+ /// $(function() {
+///    $("#language-toggle").click(function(){  
+///        $(".text-on").addClass("text-on").removeClass("text-off");
+///        $(".text-off").addClass("text-off").removeClass("text-on");
+///    });
+///  });
 
-
+ $(window).load(function () {
+     $("#top").slideDown();
+ });
 var slideUp = {
     distance: '150%',
     origin: 'bottom',
@@ -41,6 +43,3 @@ ScrollReveal().reveal('.contact',slideUp);
 //        }, 300);
 //    });
 
- $(window).load(function () {
-     $("#top").slideUp();
- });
