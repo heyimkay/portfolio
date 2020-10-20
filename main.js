@@ -10,11 +10,16 @@ theButton.onclick = function () {
 }
 
 
+///$(function() {
+///  $(".translate").click(function() {
+///    $(".translate").removeClass("on");
+///    $(this).addClass("on");
+///  });
+///});
 
-
-$(function() {
-  $(".translate").click(function() {
-    $(".translate").removeClass("on");
-    $(this).addClass("on");
+  $(function() {
+    $("#language-toggle").click(function(){  
+        $(".text-on").addClass("text-on").removeClass("text-off");
+        $(".text-off").addClass("text-off").removeClass("text-on");
+    });
   });
-});

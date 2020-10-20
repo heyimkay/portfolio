@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     margin: 0 auto;
     position: relative;
@@ -13,15 +14,34 @@ h1 {
     font-family: "Poppins", serif;
     font-size: 48px;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 40px;
+    color: #262626;
+}
+
+.text-on { 
+  display: show;
+}
+
+.text-off { 
+  display: none;
+}
+header {
+    padding: 10px 0px;
+    margin: 0 auto;
+    display: flex;
 }
 p {
     margin: 20px 0 50px 0;
 }
 .title {
-    max-width: 480px;
-    margin-top: 10%;
+    max-width: 380px;
+    margin-top: 8%;
     z-index: 1;
+}
+
+.top-bg img {
+    max-width: 100%;
+    margin-top: 40px;
 }
 
 .section {
@@ -31,11 +51,13 @@ p {
 }
 
 .section.top {
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     max-width: 1320px;
+    position: relative;
+    overflow: hidden;
 }
 
 canvas {
@@ -50,21 +72,11 @@ button {
     margin-top: 30px;
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    display: block;
-}
-
 .container {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1020px;
+    max-width: 1320px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 a {
@@ -84,8 +96,7 @@ a {
   top: 0;
   left: 0;
   display: block;
-  border-radius: 28px;
-  background: rgba(94, 209, 211, 0.5);
+  background: #F5DC2D;
   width: 56px;
   height: 56px;
   transition: all 0.3s ease;
@@ -102,18 +113,19 @@ a {
 .portfolio svg {
   position: relative;
   top: 0;
-  margin-left: 10px;
+  margin-left: 3px;
+  margin-right: 10px;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #111;
+  stroke: #262626;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
 .portfolio:hover:before {
   width: 100%;
-  background: #5ed1d3;
+  background: #262626;
 }
 .portfolio:hover svg {
     transform: translateX(0);
@@ -127,11 +139,12 @@ a {
 }
 
 .logo {
-    width: 50px;
+    width: 30px;
     float: left;
-    padding: 10px 0;
 }
-nav {
+
+
+ul.menu {
     float: right;
 }
 
@@ -152,6 +165,7 @@ nav li {
 }
 
 .lang-button {
+    display: none;
     width: 66px;
     height: 36px;
     background-color: #f5f5f5;
@@ -161,6 +175,7 @@ nav li {
     -ms-border-radius: 60px;
     -o-border-radius: 60px;
     position: relative;
+    cursor: pointer;
 }
 .language-toggle {
     font-size: 16px;
@@ -180,13 +195,13 @@ a#en {
     left: 4px;
 }
 
-.translate.on {
+.translate.on,text-on {
     width: 28px;
     height: 28px;
     background: #fff;
     border-radius: 60%;
     font-weight: 700;
-    color: #5ed1d3;
+    color: #21BEE0;
 }
 
 li.item.resume {
@@ -210,6 +225,7 @@ outline: none!important;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    position: relative;
 }
 
 .contact {
@@ -239,6 +255,12 @@ a.sns.two {
 }
 .contact p {
     font-size: 45px;
+}
+
+.footerlight img {
+    max-width: 100%;
+    margin-top: 50px;
+    width: 300px;
 }
 
 span.emailaddress {
@@ -292,6 +314,44 @@ span.emailaddress::after {
     font-size: 20px;
     padding-bottom: 5px;
 }
+
+.section.forfun {
+    background: #F5DC2D;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+p.fun-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 60px;
+}
+.grid {
+    display: grid;
+    margin: auto;
+    z-index: 1;
+}
+.forfun {
+    padding-bottom: 30px;
+}
+.forfuntext {
+    width: 290px;
+    margin: auto;
+    color: #262626;
+}
+.forfuntext::after {
+    content: "";
+    width: 950px;
+    height: 710px;
+    background-size: contain;
+    background-image: url(assets/fun-BG.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -240px;
+    bottom: 0px;
+}
 @media only screen and (max-width: 600px)  {
     a.lang {
         display: none;
@@ -300,7 +360,11 @@ span.emailaddress::after {
         opacity: 0.7;
     }
     .contact p {
-    font-size: 25px;
+        font-size: 25px;
+    }
+    .forfuntext::after {
+        background-image: none;
+        width: 1px;
     }
 }
 
@@ -311,6 +375,12 @@ span.emailaddress::after {
     .intro-about {
         font-size: 35px;
         line-height: 53px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .footerlight {
+        display: none;
     }
 }
 
@@ -341,6 +411,75 @@ span.emailaddress::after {
     .about-absolute.bottom {
         bottom: -130px;
     }
+    .top-bg img {
+        position: absolute;
+        width: 650px;
+        right: -80px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .section.top {
+        height: 420px;
+    }
+    .contact p {
+        font-size: 35px;
+    }
+    .footerlight img {
+        width: 250px;
+        position: absolute;
+        top: 130px;
+        right: 40px;
+    }
+    .grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-row-gap: 3.5625vw;
+        grid-column-gap: 3.604167vw;
+    }
+    .forfun {
+        padding-bottom: 0px;
+    }
+    .forfun.fun2 {
+        transform: translate3d(0px, 21.2905px, 0px);
+    }
+    .forfun.fun4 {
+        transform: translate3d(0px, 21.2905px, 0px);
+    }
+    p.fun-title {
+        margin-top: 0px;
+    }
+
+    p.fun-copy {
+        margin-bottom: 30px;
+    }
+    .section.forfun {
+        padding: 60px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .top-bg img {
+        width: 100%;
+        max-width: 1045px;
+    }
+    .section.top {
+        height: 560px;
+    }
+    .top-bg img {
+        right: -40px;
+    }
+    .contact p {
+        font-size: 45px;
+    }
+    .footerlight img {
+        margin-left: 50px;
+    }
+     .forfuntext {
+        text-align: left;
+    }
+    .grid {
+        grid-row-gap: 1.5625vw;
+        grid-column-gap: 1.604167vw;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -348,5 +487,38 @@ span.emailaddress::after {
         max-width: 784px;
         font-size: 65px;
         line-height: 98px;
+    }
+    h1 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .title {
+        max-width: 440px;
+    }
+    .section.top {
+        height: 630px;
+    }
+    .footerlight img {
+        width: 300px;
+        margin-top: 0px;
+        position: initial;
+    }
+    .forfuntext {
+        margin: auto 50px;
+    }
+    .grid.right {
+        margin: auto 50px;
+    }
+    .section.forfun {
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+    }
+
+}
+@media only screen and (min-width: 2000px) {
+    .forfuntext::after {
+        left: 270px;
+        bottom: 0px;
     }
 }
