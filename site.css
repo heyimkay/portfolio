@@ -225,6 +225,7 @@ outline: none!important;
     justify-content: center;
     color: #ffffff;
     position: relative;
+    overflow: hidden;
 }
 
 .contact {
