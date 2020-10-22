@@ -50,3 +50,14 @@ $(document).ready(function(){
             /* and in your CSS: section { overflow: hidden; } */
         });
     });
+$(function() {
+  $('.japanese').hide();
+  $('#jp').click(function() {
+    $('.english').hide();
+    $('.japanese').show();
+  });
+  $('#en').click(function() {
+    $('.english').show();
+    $('.japanese').hide();
+  });
+});

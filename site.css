@@ -16,14 +16,7 @@ h1 {
     font-weight: 600;
     margin-bottom: 40px;
     color: #262626;
-}
-
-.text-on { 
-  display: show;
-}
-
-.text-off { 
-  display: none;
+    max-width: 380px;
 }
 header {
     padding: 10px 0px;
@@ -34,7 +27,6 @@ p {
     margin: 20px 0 50px 0;
 }
 .title {
-    max-width: 380px;
     margin-top: 8%;
     z-index: 1;
 }
@@ -315,6 +307,9 @@ span.emailaddress::after {
     padding-bottom: 5px;
 }
 
+p.fun-copy.japanese {
+    line-height: initial;
+}
 .section.forfuns {
     background: #F5DC2D;
     text-align: center;
@@ -491,8 +486,6 @@ p.fun-title {
     h1 {
         font-size: 70px;
         line-height: 90px;
-    }
-    .title {
         max-width: 440px;
     }
     .section.top {
