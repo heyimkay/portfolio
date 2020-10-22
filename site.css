@@ -186,7 +186,7 @@ a#en {
     left: 4px;
 }
 
-.translate.on,text-on {
+.translate.on, a#en:active, a#jp:active {
     width: 28px;
     height: 28px;
     background: #fff;
@@ -347,6 +347,15 @@ p.fun-title {
     left: -240px;
     bottom: 0px;
 }
+
+.contact p.japanese {
+    font-weight: 500;
+    font-size: 40px;
+}
+h1.jp-top.japanese {
+    font-size: 60px;
+    line-height: 80px;
+}
 @media only screen and (max-width: 600px)  {
     a.lang {
         display: none;
@@ -360,6 +369,13 @@ p.fun-title {
     .forfuntext::after {
         background-image: none;
         width: 1px;
+    }
+    .contact p.japanese {
+        font-size: 20px;
+    }
+    h1.jp-top.japanese {
+        font-size: 40px;
+        line-height: 60px;
     }
 }
 
@@ -392,12 +408,18 @@ p.fun-title {
         position: absolute;
         font-size: 30px;
     }
+    .about-absolute.right.japanese {
+        right: 20px;
+    }
     .about-absolute.right {
         right: -30px;
         transform: rotate(90deg);
     }
     .about-absolute.top{
         top: -130px;
+    }
+    .about-absolute.right.japanese {
+        right: 20px;
     }
     .about-absolute.left {
         left: 30px;
@@ -411,9 +433,18 @@ p.fun-title {
         width: 650px;
         right: -80px;
     }
-    h1 {
+    h1{
         font-size: 50px;
     }
+h1.jp-top.japanese {
+    font-size: 45px;
+    line-height: 60px;
+    margin-top: 50px;
+}
+    .contact p.japanese {
+        font-size: 32px;
+    }
+    
     .section.top {
         height: 420px;
     }
@@ -475,6 +506,12 @@ p.fun-title {
         grid-row-gap: 1.5625vw;
         grid-column-gap: 1.604167vw;
     }
+    h1.jp-top.japanese {
+        font-size: 54px;
+        margin-top: 50px;
+        line-height: 80px;
+    }
+    
 }
 
 @media only screen and (min-width: 1200px) {

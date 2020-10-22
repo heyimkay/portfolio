@@ -10,12 +10,12 @@ theButton.onclick = function () {
 }
 
 
-///$(function() {
-///  $(".translate").click(function() {
-///    $(".translate").removeClass("on");
-///    $(this).addClass("on");
-///  });
-///});
+$(function() {
+  $(".translate").click(function() {
+   $(".translate").removeClass("on");
+  $(this).addClass("on");
+  });
+});
 
  /// $(function() {
 ///    $("#language-toggle").click(function(){  
